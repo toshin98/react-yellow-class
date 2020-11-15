@@ -94,7 +94,7 @@ function App() {
                 {images.map((image,index)=>(
         <div>
         <a href="#"><Img src={image.urls.thumb} key={image.id} style={{padding: '10px',borderRadius: '30px'}} alt={image.alt_description} label={index} onClick={() => imageClick(index)} /></a>
-      <p style={{fontSize:13,textAlign:'center',fontFamily:"sans-serif"}}>{image.alt_description.charAt(0).toUpperCase() + image.alt_description.slice(1)}</p>
+      <p style={{fontSize:13,textAlign:'center',fontFamily:"sans-serif"}}>{image.alt_description}</p>
         {isOpen && (
           <Lightbox
             mainSrc={simages[0][photoindex]}
